@@ -1,0 +1,13 @@
+# 6.5840/raft [6.5840/raft.test]
+./config.go:570:25: rf.Start undefined (type *Raft has no field or method Start)
+./test_test.go:208:37: cfg.rafts[leader2].Start undefined (type *Raft has no field or method Start)
+./test_test.go:253:16: cfg.rafts[i].Start undefined (type *Raft has no field or method Start)
+./test_test.go:318:36: cfg.rafts[leader].Start undefined (type *Raft has no field or method Start)
+./test_test.go:341:39: cfg.rafts[leader2].Start undefined (type *Raft has no field or method Start)
+./test_test.go:370:36: cfg.rafts[leader].Start undefined (type *Raft has no field or method Start)
+./test_test.go:383:39: cfg.rafts[leader].Start undefined (type *Raft has no field or method Start)
+./test_test.go:469:21: cfg.rafts[leader1].Start undefined (type *Raft has no field or method Start)
+./test_test.go:470:21: cfg.rafts[leader1].Start undefined (type *Raft has no field or method Start)
+./test_test.go:471:21: cfg.rafts[leader1].Start undefined (type *Raft has no field or method Start)
+./test_test.go:471:21: too many errors
+FAIL	6.5840/raft [build failed]

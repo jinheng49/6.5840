@@ -1,0 +1,24 @@
+Test (3A): initial election ...
+2024/08/06 15:15:17 [term 1]: Raft[1] start election
+2024/08/06 15:15:17 [term 0]: Raft[0] state[0] receive requestVote from Raft[1]
+2024/08/06 15:15:17 [term 0]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 15:15:17 [term 1]: Raft[1] receive vote from Raft[0]
+2024/08/06 15:15:17 [term 1]: Raft[1] become leader
+2024/08/06 15:15:17 [term 1]: Raft[1] send Hearbeats to all peers
+panic: reflect: Call using raft.AppendEntriesArgs as type *raft.AppendEntriesArgs
+
+goroutine 11 [running]:
+reflect.Value.call({0xc0000da550?, 0xc0000926a8?, 0xc00029fb18?}, {0x47d0ac6, 0x4}, {0xc00029fd20, 0x3, 0xc00029fb48?})
+	/usr/local/Cellar/go/1.22.5/libexec/src/reflect/value.go:452 +0x1b7f
+reflect.Value.Call({0xc0000da550?, 0xc0000926a8?, 0xc000014980?}, {0xc00029fd20?, 0x0?, 0x0?})
+	/usr/local/Cellar/go/1.22.5/libexec/src/reflect/value.go:380 +0xb9
+6.5840/labrpc.(*Service).dispatch(0xc0000afb40, {0x47d410d, 0xd}, {{0x483e7a0, 0xc000091520}, {0x47d4108, 0x12}, {0x488dd18, 0x48740a0}, {0xc0002a4000, ...}, ...})
+	/Users/jinheng/Downloads/6.5840/src/labrpc/labrpc.go:506 +0x36e
+6.5840/labrpc.(*Server).dispatch(0xc00009c8e8, {{0x483e7a0, 0xc000091520}, {0x47d4108, 0x12}, {0x488dd18, 0x48740a0}, {0xc0002a4000, 0xc6, 0x100}, ...})
+	/Users/jinheng/Downloads/6.5840/src/labrpc/labrpc.go:430 +0x1e5
+6.5840/labrpc.(*Network).processReq.func1()
+	/Users/jinheng/Downloads/6.5840/src/labrpc/labrpc.go:240 +0x3f
+created by 6.5840/labrpc.(*Network).processReq in goroutine 10
+	/Users/jinheng/Downloads/6.5840/src/labrpc/labrpc.go:239 +0x1d0
+exit status 2
+FAIL	6.5840/raft	0.795s

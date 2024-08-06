@@ -1,0 +1,456 @@
+Test (3A): initial election ...
+2024/08/06 14:40:20 [term 1]: Raft[0] start election
+2024/08/06 14:40:20 [term 0]: Raft[1] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:20 [term 0]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:20 [term 1]: Raft[0] receive vote from Raft[1]
+2024/08/06 14:40:20 [term 1]: Raft[0] become leader
+2024/08/06 14:40:20 [term 1]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:20 [term 1]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:20 [term 1]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:20 [term 1]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:20 [term 2]: Raft[2] start election
+2024/08/06 14:40:20 [term 1]: Raft[0] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:20 [term 1]: Raft[1] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:20 [term 2]: Raft[2] receive vote from Raft[0]
+2024/08/06 14:40:20 [term 2]: Raft[2] become leader
+2024/08/06 14:40:20 [term 2]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:20 [term 2]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:20 [term 2]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:20 [term 2]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:20 [term 3]: Raft[1] start election
+2024/08/06 14:40:20 [term 2]: Raft[0] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:20 [term 2]: Raft[2] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:20 [term 3]: Raft[1] receive vote from Raft[0]
+2024/08/06 14:40:20 [term 3]: Raft[1] become leader
+2024/08/06 14:40:20 [term 3]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:20 [term 3]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:20 [term 3]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:20 [term 3]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:20 [term 4]: Raft[0] start election
+2024/08/06 14:40:20 [term 3]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:20 [term 3]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:20 [term 4]: Raft[0] receive vote from Raft[2]
+2024/08/06 14:40:20 [term 4]: Raft[0] become leader
+2024/08/06 14:40:20 [term 4]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:20 [term 4]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:20 [term 4]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:20 [term 4]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 5]: Raft[2] start election
+2024/08/06 14:40:21 [term 4]: Raft[1] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:21 [term 4]: Raft[0] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[2] receive vote from Raft[1]
+2024/08/06 14:40:21 [term 5]: Raft[2] become leader
+2024/08/06 14:40:21 [term 5]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:21 [term 5]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:21 [term 5]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 5]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:21 [term 6]: Raft[0] start election
+2024/08/06 14:40:21 [term 5]: Raft[1] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:21 [term 5]: Raft[2] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:21 [term 6]: Raft[0] receive vote from Raft[1]
+2024/08/06 14:40:21 [term 6]: Raft[0] become leader
+2024/08/06 14:40:21 [term 6]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:21 [term 6]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 6]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 6]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 7]: Raft[1] start election
+2024/08/06 14:40:21 [term 6]: Raft[0] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:21 [term 6]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:21 [term 7]: Raft[1] receive vote from Raft[0]
+2024/08/06 14:40:21 [term 7]: Raft[1] become leader
+2024/08/06 14:40:21 [term 7]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:21 [term 7]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:21 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:21 [term 7]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:21 [term 8]: Raft[0] start election
+2024/08/06 14:40:21 [term 7]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:21 [term 7]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:21 [term 8]: Raft[0] receive vote from Raft[1]
+2024/08/06 14:40:21 [term 8]: Raft[0] become leader
+2024/08/06 14:40:21 [term 8]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:21 [term 8]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 8]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:21 [term 8]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 9]: Raft[2] start election
+2024/08/06 14:40:22 [term 8]: Raft[0] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:22 [term 8]: Raft[1] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:22 [term 9]: Raft[2] receive vote from Raft[0]
+2024/08/06 14:40:22 [term 9]: Raft[2] become leader
+2024/08/06 14:40:22 [term 9]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 9]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 9]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 9]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 9]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 10]: Raft[1] start election
+2024/08/06 14:40:22 [term 9]: Raft[0] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:22 [term 10]: Raft[1] receive vote from Raft[0]
+2024/08/06 14:40:22 [term 10]: Raft[1] become leader
+2024/08/06 14:40:22 [term 10]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 9]: Raft[2] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:22 [term 10]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 10]: Raft[2] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 10]: Raft[1] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:22 [term 10]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:22 [term 10]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:22 [term 10]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:22 [term 11]: Raft[0] start election
+2024/08/06 14:40:22 [term 10]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:22 [term 10]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[0] receive vote from Raft[1]
+2024/08/06 14:40:22 [term 11]: Raft[0] become leader
+2024/08/06 14:40:22 [term 11]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 11]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 11]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 11]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+warning: term changed even though there were no failures2024/08/06 14:40:22 [term 11]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:22 [term 11]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:22 [term 11]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:23 [term 12]: Raft[2] start election
+2024/08/06 14:40:23 [term 11]: Raft[1] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:23 [term 11]: Raft[0] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:23 [term 12]: Raft[2] receive vote from Raft[1]
+2024/08/06 14:40:23 [term 12]: Raft[2] become leader
+2024/08/06 14:40:23 [term 12]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:23 [term 12]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:23 [term 12]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:23 [term 12]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+  ... Passed --   3.1  3   75   17104    0
+Test (3A): election after network failure ...
+2024/08/06 14:40:23 [term 13]: Raft[1] start election
+2024/08/06 14:40:23 [term 1]: Raft[0] start election
+2024/08/06 14:40:23 [term 0]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:23 [term 0]: Raft[1] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:23 [term 1]: Raft[0] receive vote from Raft[2]
+2024/08/06 14:40:23 [term 1]: Raft[0] become leader
+2024/08/06 14:40:23 [term 1]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:23 [term 1]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:23 [term 1]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:23 [term 1]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:23 [term 13]: Raft[1] start election
+2024/08/06 14:40:23 [term 2]: Raft[1] start election
+2024/08/06 14:40:23 [term 1]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:23 [term 2]: Raft[1] receive vote from Raft[2]
+2024/08/06 14:40:23 [term 2]: Raft[1] become leader
+2024/08/06 14:40:23 [term 2]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:23 [term 1]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:23 [term 2]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:23 [term 2]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:23 [term 13]: Raft[1] start election
+2024/08/06 14:40:24 [term 2]: Raft[0] start election
+2024/08/06 14:40:24 [term 3]: Raft[2] start election
+2024/08/06 14:40:24 [term 2]: Raft[1] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:24 [term 3]: Raft[2] receive vote from Raft[1]
+2024/08/06 14:40:24 [term 3]: Raft[2] become leader
+2024/08/06 14:40:24 [term 3]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 3]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:24 [term 3]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:24 [term 13]: Raft[1] start election
+2024/08/06 14:40:24 [term 4]: Raft[1] start election
+2024/08/06 14:40:24 [term 3]: Raft[2] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:24 [term 4]: Raft[1] receive vote from Raft[2]
+2024/08/06 14:40:24 [term 4]: Raft[1] become leader
+2024/08/06 14:40:24 [term 4]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 2]: Raft[0] state[1] receive requestVote from Raft[1]
+2024/08/06 14:40:24 [term 2]: Raft[0] start election
+2024/08/06 14:40:24 [term 4]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:24 [term 4]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:24 [term 4]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 4]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 4]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 13]: Raft[1] start election
+2024/08/06 14:40:24 [term 5]: Raft[2] start election
+2024/08/06 14:40:24 [term 4]: Raft[0] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:24 [term 4]: Raft[1] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:24 [term 5]: Raft[2] receive vote from Raft[0]
+2024/08/06 14:40:24 [term 5]: Raft[2] become leader
+2024/08/06 14:40:24 [term 5]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 5]: Raft[0] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:24 [term 5]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:24 [term 5]: Raft[2] [state 2] receive AppendEntries from Raft[2]
+2024/08/06 14:40:24 [term 6]: Raft[1] start election
+2024/08/06 14:40:24 [term 5]: Raft[0] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:24 [term 5]: Raft[2] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:24 [term 6]: Raft[1] receive vote from Raft[0]
+2024/08/06 14:40:24 [term 6]: Raft[1] become leader
+2024/08/06 14:40:24 [term 6]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 6]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 6]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 6]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:24 [term 7]: Raft[0] start election
+2024/08/06 14:40:24 [term 6]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:24 [term 6]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:24 [term 7]: Raft[0] receive vote from Raft[1]
+2024/08/06 14:40:24 [term 7]: Raft[0] become leader
+2024/08/06 14:40:24 [term 7]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 7]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:24 [term 7]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:24 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:24 [term 7]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:24 [term 13]: Raft[1] start election
+2024/08/06 14:40:24 [term 8]: Raft[2] start election
+2024/08/06 14:40:25 [term 13]: Raft[1] start election
+2024/08/06 14:40:25 [term 8]: Raft[0] start election
+2024/08/06 14:40:25 [term 8]: Raft[1] start election
+2024/08/06 14:40:25 [term 8]: Raft[2] start election
+2024/08/06 14:40:25 [term 13]: Raft[1] start election
+2024/08/06 14:40:25 [term 8]: Raft[0] start election
+2024/08/06 14:40:25 [term 9]: Raft[2] start election
+2024/08/06 14:40:25 [term 8]: Raft[1] start election
+2024/08/06 14:40:25 [term 9]: Raft[2] start election
+2024/08/06 14:40:25 [term 13]: Raft[1] start election
+2024/08/06 14:40:25 [term 9]: Raft[0] start election
+2024/08/06 14:40:25 [term 9]: Raft[0] start election
+2024/08/06 14:40:25 [term 9]: Raft[2] start election
+2024/08/06 14:40:25 [term 9]: Raft[1] start election
+2024/08/06 14:40:25 [term 9]: Raft[1] start election
+2024/08/06 14:40:25 [term 9]: Raft[2] start election
+2024/08/06 14:40:26 [term 13]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 9]: Raft[0] start election
+2024/08/06 14:40:26 [term 9]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 9]: Raft[1] start election
+2024/08/06 14:40:26 [term 9]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 13]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[2] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] start election
+2024/08/06 14:40:26 [term 13]: Raft[1] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[0] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] start election
+2024/08/06 14:40:26 [term 11]: Raft[0] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] start election
+2024/08/06 14:40:26 [term 10]: Raft[1] state[1] receive requestVote from Raft[2]
+2024/08/06 14:40:26 [term 11]: Raft[2] receive vote from Raft[1]
+2024/08/06 14:40:26 [term 11]: Raft[2] become leader
+2024/08/06 14:40:26 [term 11]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:26 [term 11]: Raft[1] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:26 [term 12]: Raft[1] start election
+2024/08/06 14:40:26 [term 11]: Raft[2] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:26 [term 12]: Raft[1] receive vote from Raft[2]
+2024/08/06 14:40:26 [term 12]: Raft[1] become leader
+2024/08/06 14:40:26 [term 12]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:26 [term 12]: Raft[2] [state 0] receive AppendEntries from Raft[2]
+2024/08/06 14:40:26 [term 13]: Raft[1] start election
+2024/08/06 14:40:26 [term 12]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:26 [term 12]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:26 [term 11]: Raft[0] start election
+2024/08/06 14:40:26 [term 11]: Raft[0] start election
+2024/08/06 14:40:26 [term 11]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:27 [term 12]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 12]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 11]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:27 [term 13]: Raft[1] start election
+2024/08/06 14:40:27 [term 11]: Raft[0] start election
+2024/08/06 14:40:27 [term 11]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 12]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 11]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 12]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 12]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 12]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 13]: Raft[1] start election
+2024/08/06 14:40:27 [term 13]: Raft[1] start election
+2024/08/06 14:40:27 [term 12]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[1] receive vote from Raft[2]
+2024/08/06 14:40:27 [term 13]: Raft[1] become leader
+2024/08/06 14:40:27 [term 13]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:27 [term 12]: Raft[0] start election
+2024/08/06 14:40:27 [term 12]: Raft[0] start election
+2024/08/06 14:40:27 [term 13]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 13]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 13]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 13]: Raft[1] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:27 [term 13]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[0] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:27 [term 14]: Raft[2] start election
+2024/08/06 14:40:27 [term 13]: Raft[0] state[0] receive requestVote from Raft[2]
+2024/08/06 14:40:27 [term 14]: Raft[2] receive vote from Raft[0]
+2024/08/06 14:40:27 [term 14]: Raft[2] become leader
+2024/08/06 14:40:27 [term 14]: Raft[2] send Hearbeats to all peers
+2024/08/06 14:40:27 [term 13]: Raft[1] state[2] receive requestVote from Raft[2]
+2024/08/06 14:40:27 [term 14]: Raft[0] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 14]: Raft[1] [state 0] receive AppendEntries from Raft[1]
+  ... Passed --   4.5  3  175   25034    0
+Test (3A): multiple elections ...
+2024/08/06 14:40:27 [term 14]: Raft[2] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:27 [term 13]: Raft[1] start election
+2024/08/06 14:40:28 [term 1]: Raft[3] start election
+2024/08/06 14:40:28 [term 0]: Raft[6] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 0]: Raft[4] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 0]: Raft[0] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 0]: Raft[1] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 0]: Raft[2] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 1]: Raft[3] receive vote from Raft[6]
+2024/08/06 14:40:28 [term 0]: Raft[5] state[0] receive requestVote from Raft[3]
+2024/08/06 14:40:28 [term 1]: Raft[3] receive vote from Raft[4]
+2024/08/06 14:40:28 [term 1]: Raft[3] receive vote from Raft[0]
+2024/08/06 14:40:28 [term 1]: Raft[3] become leader
+2024/08/06 14:40:28 [term 1]: Raft[3] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 2]: Raft[0] start election
+2024/08/06 14:40:28 [term 1]: Raft[6] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 1]: Raft[4] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 1]: Raft[1] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 2]: Raft[0] receive vote from Raft[6]
+2024/08/06 14:40:28 [term 1]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 2]: Raft[0] receive vote from Raft[4]
+2024/08/06 14:40:28 [term 1]: Raft[5] state[0] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 2]: Raft[0] receive vote from Raft[2]
+2024/08/06 14:40:28 [term 2]: Raft[0] become leader
+2024/08/06 14:40:28 [term 2]: Raft[0] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 2]: Raft[1] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 1]: Raft[3] state[2] receive requestVote from Raft[0]
+2024/08/06 14:40:28 [term 2]: Raft[2] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 2]: Raft[4] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 2]: Raft[3] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 2]: Raft[6] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 2]: Raft[5] [state 0] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 3]: Raft[5] start election
+2024/08/06 14:40:28 [term 2]: Raft[6] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 2]: Raft[2] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 2]: Raft[3] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] receive vote from Raft[6]
+2024/08/06 14:40:28 [term 2]: Raft[4] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] receive vote from Raft[2]
+2024/08/06 14:40:28 [term 3]: Raft[5] receive vote from Raft[3]
+2024/08/06 14:40:28 [term 3]: Raft[5] become leader
+2024/08/06 14:40:28 [term 3]: Raft[5] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 2]: Raft[1] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 13]: Raft[1] start election
+2024/08/06 14:40:28 [term 2]: Raft[0] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[1] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 2]: Raft[0] [state 2] receive AppendEntries from Raft[3]
+2024/08/06 14:40:28 [term 2]: Raft[0] state[2] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[2] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[3] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[4] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[6] [state 0] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[0] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[1] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] [state 2] receive AppendEntries from Raft[0]
+2024/08/06 14:40:28 [term 3]: Raft[2] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[3] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[4] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[6] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] [state 2] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 4]: Raft[1] start election
+2024/08/06 14:40:28 [term 3]: Raft[0] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[4] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[5] [state 2] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 3]: Raft[6] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:28 [term 13]: Raft[1] start election
+2024/08/06 14:40:28 [term 4]: Raft[2] start election
+2024/08/06 14:40:28 [term 4]: Raft[3] start election
+2024/08/06 14:40:28 [term 4]: Raft[6] start election
+2024/08/06 14:40:28 [term 3]: Raft[5] state[2] receive requestVote from Raft[6]
+2024/08/06 14:40:28 [term 3]: Raft[0] state[0] receive requestVote from Raft[6]
+2024/08/06 14:40:28 [term 3]: Raft[4] state[0] receive requestVote from Raft[6]
+2024/08/06 14:40:28 [term 4]: Raft[6] receive vote from Raft[5]
+2024/08/06 14:40:28 [term 4]: Raft[6] receive vote from Raft[0]
+2024/08/06 14:40:28 [term 4]: Raft[6] receive vote from Raft[4]
+2024/08/06 14:40:28 [term 4]: Raft[6] become leader
+2024/08/06 14:40:28 [term 4]: Raft[6] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 4]: Raft[1] start election
+2024/08/06 14:40:28 [term 4]: Raft[0] [state 0] receive AppendEntries from Raft[6]
+2024/08/06 14:40:28 [term 4]: Raft[5] [state 0] receive AppendEntries from Raft[6]
+2024/08/06 14:40:28 [term 4]: Raft[4] [state 0] receive AppendEntries from Raft[6]
+2024/08/06 14:40:28 [term 4]: Raft[6] [state 2] receive AppendEntries from Raft[6]
+2024/08/06 14:40:28 [term 13]: Raft[1] start election
+2024/08/06 14:40:28 [term 4]: Raft[2] start election
+2024/08/06 14:40:28 [term 4]: Raft[3] start election
+2024/08/06 14:40:28 [term 5]: Raft[4] start election
+2024/08/06 14:40:28 [term 4]: Raft[5] state[0] receive requestVote from Raft[4]
+2024/08/06 14:40:28 [term 4]: Raft[1] state[1] receive requestVote from Raft[4]
+2024/08/06 14:40:28 [term 4]: Raft[2] state[1] receive requestVote from Raft[4]
+2024/08/06 14:40:28 [term 5]: Raft[4] receive vote from Raft[5]
+2024/08/06 14:40:28 [term 5]: Raft[4] receive vote from Raft[1]
+2024/08/06 14:40:28 [term 5]: Raft[4] receive vote from Raft[2]
+2024/08/06 14:40:28 [term 5]: Raft[4] become leader
+2024/08/06 14:40:28 [term 5]: Raft[4] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 5]: Raft[6] start election
+2024/08/06 14:40:28 [term 6]: Raft[1] start election
+2024/08/06 14:40:28 [term 5]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:28 [term 5]: Raft[5] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:28 [term 6]: Raft[1] receive vote from Raft[2]
+2024/08/06 14:40:28 [term 6]: Raft[1] receive vote from Raft[5]
+2024/08/06 14:40:28 [term 7]: Raft[5] start election
+2024/08/06 14:40:28 [term 6]: Raft[2] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 7]: Raft[5] receive vote from Raft[2]
+2024/08/06 14:40:28 [term 6]: Raft[1] start election
+2024/08/06 14:40:28 [term 7]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:28 [term 5]: Raft[0] start election
+2024/08/06 14:40:28 [term 5]: Raft[4] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:28 [term 6]: Raft[4] state[0] receive requestVote from Raft[5]
+2024/08/06 14:40:28 [term 7]: Raft[1] receive vote from Raft[4]
+2024/08/06 14:40:28 [term 7]: Raft[1] become leader
+2024/08/06 14:40:28 [term 7]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:28 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[4]
+2024/08/06 14:40:28 [term 7]: Raft[4] state[0] receive requestVote from Raft[1]
+2024/08/06 14:40:28 [term 7]: Raft[5] receive vote from Raft[4]
+2024/08/06 14:40:28 [term 7]: Raft[4] [state 0] receive AppendEntries from Raft[4]
+2024/08/06 14:40:29 [term 5]: Raft[3] start election
+2024/08/06 14:40:29 [term 13]: Raft[1] start election
+2024/08/06 14:40:29 [term 7]: Raft[1] state[2] receive requestVote from Raft[5]
+2024/08/06 14:40:29 [term 7]: Raft[1] [state 2] receive AppendEntries from Raft[4]
+2024/08/06 14:40:29 [term 7]: Raft[5] receive vote from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[5] become leader
+2024/08/06 14:40:29 [term 7]: Raft[5] send Hearbeats to all peers
+2024/08/06 14:40:29 [term 7]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[4] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 5]: Raft[3] start election
+2024/08/06 14:40:29 [term 7]: Raft[5] state[2] receive requestVote from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[5] [state 2] receive AppendEntries from Raft[4]
+2024/08/06 14:40:29 [term 7]: Raft[5] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[1] [state 2] receive AppendEntries from Raft[5]
+2024/08/06 14:40:29 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:29 [term 7]: Raft[4] [state 0] receive AppendEntries from Raft[5]
+2024/08/06 14:40:29 [term 7]: Raft[5] [state 2] receive AppendEntries from Raft[5]
+2024/08/06 14:40:29 [term 7]: Raft[1] send Hearbeats to all peers
+2024/08/06 14:40:29 [term 5]: Raft[6] start election
+2024/08/06 14:40:29 [term 7]: Raft[2] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[4] [state 0] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[1] [state 2] receive AppendEntries from Raft[1]
+2024/08/06 14:40:29 [term 7]: Raft[5] [state 2] receive AppendEntries from Raft[1]
+--- FAIL: TestManyElections3A (1.43s)
+    config.go:443: term 7 has 2 (>1) leaders
+FAIL
+exit status 1
+FAIL	6.5840/raft	9.587s

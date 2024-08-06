@@ -1,0 +1,32 @@
+Test (3A): initial election ...
+2024/08/06 15:10:28 [term 1]: Raft[0] start election
+2024/08/06 15:10:28 [term 0]: Raft[1] state[0] receive requestVote from Raft[0]
+2024/08/06 15:10:28 [term 0]: Raft[2] state[0] receive requestVote from Raft[0]
+2024/08/06 15:10:28 [term 1]: Raft[0] receive vote from Raft[1]
+2024/08/06 15:10:28 [term 1]: Raft[0] become leader
+2024/08/06 15:10:28 [term 1]: Raft[0] send Hearbeats to all peers
+2024/08/06 15:10:28 [term 2]: Raft[1] start election
+2024/08/06 15:10:28 [term 1]: Raft[2] state[0] receive requestVote from Raft[1]
+2024/08/06 15:10:28 [term 2]: Raft[1] receive vote from Raft[2]
+2024/08/06 15:10:28 [term 2]: Raft[1] become leader
+2024/08/06 15:10:28 [term 2]: Raft[1] send Hearbeats to all peers
+panic: runtime error: index out of range [-1]
+
+goroutine 16 [running]:
+6.5840/raft.(*Raft).SendAppendEntries(0xc00013a1c0, 0x0, 0x0?, 0x0?)
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:494 +0x41b
+6.5840/raft.(*Raft).SendHeartBeat.func1(0x0)
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:569 +0x17e
+created by 6.5840/raft.(*Raft).SendHeartBeat in goroutine 8
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:556 +0xb1
+panic: runtime error: index out of range [-1]
+
+goroutine 33 [running]:
+6.5840/raft.(*Raft).SendAppendEntries(0xc00013a1c0, 0x1, 0x0?, 0x0?)
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:494 +0x41b
+6.5840/raft.(*Raft).SendHeartBeat.func1(0x1)
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:569 +0x17e
+created by 6.5840/raft.(*Raft).SendHeartBeat in goroutine 8
+	/Users/jinheng/Downloads/6.5840/src/raft/raft.go:556 +0xb1
+exit status 2
+FAIL	6.5840/raft	0.846s
