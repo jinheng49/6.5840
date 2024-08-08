@@ -175,7 +175,7 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 	// Your code here (3A, 3B).
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
-	DPrintf("[term %d]: Raft[%d] state[%d] receive requestVote from Raft[%d]", rf.currentTerm, rf.me, rf.state, args.CandidateId)
+	// DPrintf("[term %d]: Raft[%d] state[%d] receive requestVote from Raft[%d]", rf.currentTerm, rf.me, rf.state, args.CandidateId)
 	if args.Term < rf.currentTerm || (args.Term == rf.currentTerm && rf.votedFor != -1 && rf.votedFor != args.CandidateId) {
 		reply.Term = rf.currentTerm
 		reply.VoteGranted = false
@@ -214,7 +214,7 @@ type AppendEntriesReply struct {
 func (rf *Raft) AppendEntries(args *AppendEntriesArgs, reply *AppendEntriesReply) {
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
-	DPrintf("[term %d]: Raft[%d] [state %d] receive AppendEntries from Raft[%d]", rf.currentTerm, rf.me, rf.state, args.LeadId)
+	// DPrintf("[term %d]: Raft[%d] [state %d] receive AppendEntries from Raft[%d]", rf.currentTerm, rf.me, rf.state, args.LeadId)
 	if args.Term < rf.currentTerm {
 		reply.Success = false
 		return
@@ -319,6 +319,12 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 	rf.logs = append(rf.logs, new_log)
 	index = len(rf.logs)
 	term = rf.currentTerm
+	// args := &AppendEntriesArgs{
+	// 	Term:   rf.currentTerm,
+	// 	LeadId: rf.me,
+	// }
+	// reply := &AppendEntriesReply{}
+	// go rf.SendAppendEntries(args, reply)
 
 	return index, term, isLeader
 }
@@ -426,7 +432,10 @@ func (rf *Raft) ChangeState(state Statetype) {
 
 func (rf *Raft) StartElection() {
 	DPrintf("[term %d]: Raft[%d] start election", rf.currentTerm, rf.me)
+	// rf.ChangeState(Candidate)
+	// rf.currentTerm += 1
 	rf.votedFor = rf.me
+	// rf.electionTimer.Reset(RandomizedElectionTimeout())
 	voteChan := make(chan RequestVoteReply, len(rf.peers))
 	args := &RequestVoteArgs{
 		Term:         rf.currentTerm,
@@ -472,7 +481,9 @@ func (rf *Raft) StartElection() {
 			}
 		case <-time.After(300 * time.Millisecond):
 			if rf.state == Candidate {
+				DPrintf("[term %d]: Raft[%d] new election", rf.currentTerm, rf.me)
 				go rf.StartElection()
+
 			}
 			return
 		}
@@ -562,7 +573,7 @@ func (rf *Raft) SendHeartBeat() {
 				}
 			}
 		}(i)
-		time.Sleep(10 * time.Millisecond)
+		// time.Sleep(10 * time.Millisecond)是不是太长了
 	}
 	rf.heartbeatTimer.Reset(stableheatbeatTime())
 }
